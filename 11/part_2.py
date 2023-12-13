@@ -25,15 +25,6 @@ def main():
             if all(maze[i][j] == "." for i in range(len(maze))):
                 empty_cols.append(j)
 
-        # dist = []
-        # for i in range(len(maze)):
-        #     dist.append([])
-        #     for j in range(len(maze[0])):
-        #         if i in empty_rows or j in empty_cols:
-        #             dist[-1].append(2)
-        #         else:
-        #             dist[-1].append(1)
-
         positions = []
         for i, row in enumerate(maze):
             for j, cell in enumerate(row):
